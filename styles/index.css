@@ -25,6 +25,35 @@ body {
   background-color: #fff6f6 !important;
   overflow-x: hidden;
 }
+/* Add animation to "page content" */
+.animate-bottom {
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    margin-bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    margin-bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0;
+    opacity: 1;
+  }
+}
 #mobile {
   display: none;
 }
