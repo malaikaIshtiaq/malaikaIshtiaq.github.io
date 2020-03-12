@@ -2,6 +2,7 @@
   display: none;
 }
 #mobile {
+  cursor: auto !important;
   display: block !important;
   font-family: "Poppins", sans-serif !important;
 }
