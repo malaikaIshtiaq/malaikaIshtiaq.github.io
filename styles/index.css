@@ -69,7 +69,6 @@ body {
   z-index: 99999;
   user-select: none;
   pointer-events: none;
-  z-index: 10000;
   transform: scale(1);
 }
 .circle:active {
@@ -88,7 +87,6 @@ body {
   z-index: 99999;
   user-select: none;
   pointer-events: none;
-  z-index: 10000;
   overflow: hidden;
   transform: scale(1);
 }
@@ -418,7 +416,7 @@ body {
   border: none !important;
   padding: 20px;
 }
-.card p {
+.card a {
   font-size: 17px;
   color: #4128ffad;
 }
