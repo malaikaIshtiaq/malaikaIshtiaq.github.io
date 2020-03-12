@@ -102,7 +102,7 @@ body {
   width: 500px;
   background-repeat: no-repeat;
   background-size: contain;
-  background: url(https://res.cloudinary.com/malaika/image/upload/v1582730622/Black_and_Red_Laser_Games_Logo_1.png);
+  background: url(/assets/wave1.png);
 }
 .wav-head {
   margin-top: -53%;
@@ -217,7 +217,7 @@ body {
   z-index: -99;
   height: 350px;
   width: 350px;
-  background: url(https://res.cloudinary.com/malaika/image/upload/v1580222311/Untitled_design_35_1.png);
+  background: url(/assets/pineapple.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -318,7 +318,7 @@ body {
   top: 0;
   height: 800px;
   width: 400px;
-  background: url(https://res.cloudinary.com/malaika/image/upload/v1579617799/Component_3.png);
+  background: url(/assets/component-1.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -330,7 +330,7 @@ body {
   width: 550px;
   z-index: 99;
   height: 700px;
-  background: url(https://res.cloudinary.com/malaika/image/upload/v1580143414/Untitled_design_33_1.png);
+  background: url(/assets/hand.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -341,7 +341,7 @@ body {
   top: -200px;
   width: 300px;
   height: 300px;
-  background: url(https://res.cloudinary.com/malaika/image/upload/v1580142231/Untitled_design_30_1.png);
+  background: url(/assets/tiger.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -352,7 +352,7 @@ body {
   top: 0;
   width: 100px;
   height: 100px;
-  background: url(https://res.cloudinary.com/malaika/image/upload/v1580141662/Untitled_design_30_3.png);
+  background: url(/assets/bird.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -363,7 +363,7 @@ body {
   top: 0;
   height: 500px;
   width: 400px;
-  background: url(https://res.cloudinary.com/malaika/image/upload/v1579620735/Component_5.png);
+  background: url(/assets/component2.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -375,7 +375,7 @@ body {
   z-index: -99;
   height: 300px;
   width: 300px;
-  background: url(https://res.cloudinary.com/malaika/image/upload/v1580141662/Untitled_design_30_3.png);
+  background: url(/assets/pineapple.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
