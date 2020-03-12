@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+:root {
+  --heading-letter-spacing: 0.025em;
+  --page-width: 1450px;
+  --base-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+body::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #ffd9d9;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2d14f4;
+  outline: 1px solid #4028ff;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  cursor: none;
+  background-color: #fff6f6 !important;
+  overflow-x: hidden;
+}
+#mobile {
+  display: none;
+}
+.circle {
+  position: fixed;
+  background-color: #2d14f4;
+  width: 10px;
+  height: 10px;
+  left: -10px;
+  top: -10px;
+  border-radius: 100%;
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  transform: scale(1);
+}
+.circle:active {
+  opacity: 1;
+  transform: scale(0);
+}
+.circle-follow {
+  position: fixed;
+  border: 1px solid #2d14f4;
+  width: 30px;
+  height: 30px;
+  left: -21px;
+  top: -21px;
+  border-radius: 100%;
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  overflow: hidden;
+  transform: scale(1);
+}
+.circle-follow:active {
+  transform: scale(3);
+}
+.wave {
+  display: block;
+  position: relative;
+  left: -30%;
+  top: 0;
+  height: 300px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: url(https://res.cloudinary.com/malaika/image/upload/v1582730622/Black_and_Red_Laser_Games_Logo_1.png);
+}
+.wav-head {
+  margin-top: -53%;
+}
+.spider {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 64%;
+  margin-left: -20px;
+  -webkit-animation: movement 5s ease-in-out forwards;
+}
+.spider::after {
+  background: #2d14f4;
+  content: "";
+  position: absolute;
+  top: -1000px;
+  margin-left: 9px;
+  width: 1px;
+  height: 1000px;
+}
+.spider::before {
+  background: #2d14f4;
+  border-radius: 50% 50% 50% 50% / 61% 61% 39% 39%;
+  color: #ffd9d9;
+  font-size: 1.3em;
+  content: ".......";
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -4px;
+  width: 28px;
+  height: 27px;
+}
+.left {
+  position: absolute;
+}
+.right {
+  position: absolute;
+  -webkit-transform: rotatey(180deg);
+}
+.one,
+.two,
+.three,
+.four {
+  background: #2d14f4;
+  position: relative;
+  width: 20px;
+  height: 3px;
+}
+.one > .one,
+.two > .two,
+.three > .three,
+.four > .four {
+  -webkit-transform-origin: 20px top;
+  -webkit-transform: rotate(-80deg) translatex(20px);
+  -webkit-animation: seg 2.5s ease infinite;
+}
+.one > .one > .one,
+.two > .two > .two,
+.three > .three > .three,
+.four > .four > .four {
+  -webkit-transform-origin: 20px top;
+  -webkit-transform: rotate(10deg) translatex(20px);
+  -webkit-animation: seg 1.5s ease infinite;
+}
+.right > .two > .two {
+  -webkit-animation-delay: 200ms;
+}
+.two > .two {
+  -webkit-animation-delay: 400ms;
+}
+.two > .two > .two {
+  -webkit-animation-delay: 200ms;
+}
+.right > .three > .three {
+  -webkit-animation-delay: 400ms;
+}
+.three > .three {
+  -webkit-animation-delay: 600ms;
+}
+.three > .three > .three {
+  -webkit-animation-delay: 300ms;
+}
+.right > .four > .four {
+  -webkit-animation-delay: 100ms;
+}
+.four > .four {
+  -webkit-animation-delay: 800ms;
+}
+.four > .four > .four {
+  -webkit-animation-delay: 400ms;
+}
+@-webkit-keyframes seg {
+  50% {
+    -webkit-transform: rotate(55deg) translatex(20px);
+  }
+}
+@-webkit-keyframes movement {
+  100% {
+    top: 30%;
+  }
+}
+
+.head {
+  margin-top: 10%;
+}
+.pineapple2 {
+  display: block;
+  position: absolute;
+  left: 200px;
+  top: -10px;
+  z-index: -99;
+  height: 350px;
+  width: 350px;
+  background: url(https://res.cloudinary.com/malaika/image/upload/v1580222311/Untitled_design_35_1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.big-h1 {
+  font-size: 6em;
+  color: #2d14f4;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+.project-heading h1 {
+  font-size: 4em;
+  color: #2d14f4;
+  letter-spacing: 4px;
+  margin-left: 23%;
+}
+.project-heading span {
+  width: 100px;
+  height: 40px;
+  border-bottom: 3px solid #2d14f4;
+  position: absolute;
+  font-size: 1em;
+  letter-spacing: 5px;
+  color: #2d14f4;
+}
+.project-description p {
+  font-size: 1em;
+  color: #2d14f4;
+  letter-spacing: 4px;
+  margin-left: 23%;
+}
+#project {
+  margin-top: 30%;
+}
+
+.name {
+  font-size: 2em;
+  color: #2d14f4;
+  font-weight: lighter;
+}
+
+#portfolio {
+  height: 380px;
+}
+.gallery sub {
+  padding: 5px;
+  font-size: 15px;
+  top: -20px;
+  color: #4128ffad;
+}
+.gallery {
+  margin-top: 10%;
+}
+.circular {
+  margin-right: -200px;
+  display: flex;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+.small {
+  color: #2d14f4;
+  text-transform: uppercase;
+  animation: linear 15s rotate infinite;
+}
+.medium {
+  color: #2d14f4;
+  text-transform: uppercase;
+  animation: linear 30s rotate reverse infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.more {
+  margin-top: 30%;
+  font-size: 6em;
+  color: #2d14f4;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+#side-title {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 800px;
+  width: 400px;
+  background: url(https://res.cloudinary.com/malaika/image/upload/v1579617799/Component_3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hand {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 700px;
+  width: 550px;
+  z-index: 99;
+  height: 700px;
+  background: url(https://res.cloudinary.com/malaika/image/upload/v1580143414/Untitled_design_33_1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.tiger {
+  display: block;
+  position: relative;
+  left: 84%;
+  top: -200px;
+  width: 300px;
+  height: 300px;
+  background: url(https://res.cloudinary.com/malaika/image/upload/v1580142231/Untitled_design_30_1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.bird {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background: url(https://res.cloudinary.com/malaika/image/upload/v1580141662/Untitled_design_30_3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.slide-2 {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 500px;
+  width: 400px;
+  background: url(https://res.cloudinary.com/malaika/image/upload/v1579620735/Component_5.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.pineapple {
+  display: block;
+  position: absolute;
+  left: -300px;
+  top: -70px;
+  z-index: -99;
+  height: 300px;
+  width: 300px;
+  background: url(https://res.cloudinary.com/malaika/image/upload/v1580141662/Untitled_design_30_3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.p-h1 {
+  font-size: 6em;
+  color: #2d14f4;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 1000px) {
+  .slide {
+    display: none;
+  }
+  .portfolio-img {
+    display: none;
+  }
+}
+.row.head {
+  height: 40em !important;
+}
+
+.socials i {
+  font-size: 2em;
+  padding: 5px;
+  color: #2d14f4;
+  font-weight: normal;
+}
+.card {
+  background: transparent !important;
+  border: none !important;
+  padding: 20px;
+}
+.card p {
+  font-size: 17px;
+  color: #4128ffad;
+}
+.card h5 {
+  font-size: 17px;
+  color: #2d14f4;
+}
+.projecttop {
+  z-index: -2;
+  background: #2d14f4;
+  height: 400px;
+  margin-left: 20px;
+}
+.projecttop::after {
+  z-index: -1;
+  position: absolute;
+  background: #2d14f4;
+  height: 400px;
+  width: 100%;
+  opacity: 0.9;
+  left: -0px;
+  content: "";
+  margin-top: -400px;
+}
+.selected {
+  font-size: 1.5em;
+  margin-top: -20px;
+  margin-left: -10%;
+  color: #2d14f4;
+  font-weight: normal;
+}
+.project {
+  z-index: -2;
+  background: #2d14f4;
+  height: 400px;
+  margin-left: 20px;
+}
+.project::after {
+  z-index: -1;
+  position: absolute;
+  background: #2d14f4;
+  height: 400px;
+  width: 100%;
+  opacity: 0.9;
+  left: -0px;
+  content: "";
+  margin-top: -105px;
+}
+.project-h1 {
+  z-index: 999;
+  font-size: 3em;
+  color: #fff6f6;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  line-height: 2em;
+}
+.top {
+  margin-top: 55%;
+}
+.view-all {
+  padding: 5px;
+  color: #2d14f4;
+  font-weight: bold;
+  background: transparent;
+  outline: none;
+  border: none;
+  float: right;
+}
+.view-all a {
+  font-size: 4em;
+  color: #2d14f4;
+}
+.wave2 {
+  width: 290px;
+  margin-bottom: -25%;
+}
+#projects {
+  font-size: 4em;
+  padding: 5px;
+  color: #2d14f4;
+  font-weight: bold;
+}
+a:hover {
+  color: #4028ff !important;
+  text-decoration-line: none !important;
+}
+.contact {
+  color: #2d14f4;
+  font-weight: bold;
+  font-size: 5em;
+}
+form.contact-form {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: #2d14f4;
+}
+.form-field {
+  text-align: center;
+  height: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: transparent;
+  border: 2px solid #2d14f4;
+  box-shadow: none;
+  width: 100%;
+}
+.h-200 {
+  height: 100px;
+}
+.form-submit {
+  background: #2d14f4;
+  color: #fff6f6;
+  font-weight: bold;
+  height: 50px;
+  font-size: 2em;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: none;
+  width: 100%;
+}
+.contact-block {
+  margin-top: 5%;
+  margin-left: 35%;
+  width: 80%;
+  height: 90%;
+}
+.contact-tiger {
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 10%;
+  width: 50%;
+  height: 60%;
+  z-index: 1;
+}
+.contact-bird {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 5%;
+  width: 20%;
+  height: 25%;
+  z-index: 1;
+}

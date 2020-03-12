@@ -1,0 +1,83 @@
+#desktop {
+  display: none;
+}
+#mobile {
+  display: block !important;
+  font-family: "Poppins", sans-serif !important;
+}
+.title {
+  font-size: 4em;
+  color: #2d14f4;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+.projects {
+  font-size: 4em;
+  color: #2d14f4;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+
+.circle {
+  display: none;
+}
+.circle-follow {
+  display: none;
+}
+.card {
+  background: transparent !important;
+  border: none !important;
+  padding: 20px;
+}
+.card p {
+  font-size: 17px;
+  color: #4128ffad;
+}
+.card h5 {
+  font-size: 17px;
+  color: #2d14f4;
+}
+
+.mobile-bottom-nav {
+  position: fixed;
+  font-size: 50px !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-weight: bolder;
+  z-index: 1000;
+  will-change: transform;
+  transform: translateZ(0);
+  display: flex;
+  height: 50px;
+  background-color: #2d14f4;
+  color: #fff6f6;
+}
+.mobile-bottom-nav__item {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mobile-bottom-nav__item--active {
+  background: #8c7afc54;
+  font-weight: bolder;
+  color: #ffdede;
+}
+.mobile-bottom-nav__item-content {
+  display: flex;
+  flex-direction: column;
+}
+.home {
+  font-size: 28px;
+  color: #fff6f6;
+}
+
+a:hover {
+  color: #fff6f6 !important;
+  text-decoration: none;
+}
