@@ -1,5 +1,5 @@
 $(window).on("load", function() {
-  $(".loader-wrapper").fadeOut("slow");
+  $(".loader-wrapper").fadeOut(500);
 });
 $(window).scroll(function() {
   $(".head").css("opacity", 1 - $(window).scrollTop() / 950);
