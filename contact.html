@@ -28,8 +28,8 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div class="container">
+  <body style="position: relative !important; left: 0% !important;">
+    <div class="container" id="desktop">
       <div class="row start mb-5 mt-2">
         <div class="col">
           <h3 class="name">Malaika.</h3>
@@ -81,6 +81,66 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="container" id="mobile">
+      <div class="row start mb-5 mt-2">
+        <div class="col">
+          <h3 class="name">Malaika.</h3>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col navbar"></div>
+      </div>
+      <div class="row">
+        <div class="col socials">
+          <a href="https://codepen.io/MalaikaIshtiaq"
+            ><i class="fa fa-codepen"></i
+          ></a>
+          <a href="https://github.com/malaikaIshtiaq"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="https://dribbble.com/malaika"
+            ><i class="fa fa-dribbble"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/malaika-ishtiaq-17a502169/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col">
+          <h1 class="contact">Contact</h1>
+          <form
+            class="contact-form"
+            action="https://formspree.io/mjvralav"
+            method="POST"
+          >
+            <label>Your email: </label>
+            <input type="text" name="_replyto" class="form-field" />
+            <label> Your message:</label>
+            <textarea name="message" class="form-field h-200"></textarea>
+            <button type="submit" class="form-submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <nav class="mobile-bottom-nav">
+        <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
+          <div class="mobile-bottom-nav__item-content">
+            <a href="index.html">Home</a>
+          </div>
+        </div>
+        <div class="mobile-bottom-nav__item">
+          <div class="mobile-bottom-nav__item-content">
+            <a href="projects.html">Projects</a>
+          </div>
+        </div>
+        <div class="mobile-bottom-nav__item">
+          <div class="mobile-bottom-nav__item-content">
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
     </div>
     <div class="circle"></div>
     <div class="circle-follow"></div>
