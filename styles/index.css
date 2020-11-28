@@ -24,6 +24,9 @@ body {
   cursor: none;
   background-color: #fff6f6 !important;
   overflow-x: hidden;
+  position: fixed;
+  display: block;
+  left: 8%;
 }
 /* Add animation to "page content" */
 .animate-bottom {
@@ -56,6 +59,9 @@ body {
 }
 #mobile {
   display: none;
+}
+.navbar a {
+  color: #2d14f4;
 }
 .circle {
   mix-blend-mode: difference;
