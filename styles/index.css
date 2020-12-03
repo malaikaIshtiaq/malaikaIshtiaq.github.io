@@ -25,8 +25,12 @@ body {
   background-color: #fff6f6 !important;
   overflow-x: hidden;
   position: fixed;
+
+  width: 100% !important;
+}
+.content {
+  width: 100% !important;
   display: block;
-  left: 8%;
 }
 /* Add animation to "page content" */
 .animate-bottom {
